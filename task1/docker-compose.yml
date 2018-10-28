@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  my_service:
+    build:
+      context: "."
+      args:
+        USERNAME: "alexxxxxxx"
+        EMAIL: "alexrym@mail.ru"
+    volumes:
+      - /tmp/code:/code
+    tty: true
